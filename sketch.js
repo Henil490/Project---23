@@ -4,6 +4,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
+var box1, box2, box3;
 
 function preload()
 {
@@ -48,9 +49,9 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
 	 
-	 Box1 = new Box(400,680,200,20);
-	 Box2 = new Box(200,600,10,150);
-	 Box3 = new Box(600,600,10,150);
+	 box1 = new Box(400,650,300,20);
+	 box2 = new Box(250,580,20,150);
+	 box3 = new Box(550,580,20,150);
 
 
 	
@@ -65,15 +66,14 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
-  Box1.display();
-  Box2.display();
-  Box3.display();
-  
+ 
   
  
 
   drawSprites();
- 
+  box1.display();
+  box2.display();
+  box3.display();
  
 }
 
