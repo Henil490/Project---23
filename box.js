@@ -13,7 +13,7 @@ class Box {
     display(){
      
       rectMode(CENTER);
-
+fill("red");
       rect(0, 0, this.width, this.height);
       
     }
