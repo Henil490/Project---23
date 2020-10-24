@@ -53,14 +53,15 @@ function setup() {
 	 Box3 = new Box(600,600,10,150);
 
 
-	Engine.run(engine);
+	
   
 }
 
 
 function draw() {
-  rectMode(CENTER);
+
   background(0);
+	Engine.update(engine)
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
