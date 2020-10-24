@@ -48,9 +48,9 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
 	 
-	 Box1 = new Box(400,80,20,200);
-	 Box2 = new Box(200,100,100,20);
-	 Box3 = new Box(200,300,100,20);
+	 Box1 = new Box(400,680,200,20);
+	 Box2 = new Box(200,600,10,150);
+	 Box3 = new Box(600,600,10,150);
 
 
 	Engine.run(engine);
